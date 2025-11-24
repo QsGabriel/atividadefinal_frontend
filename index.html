@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Gabriel Queiroz de Souza - Desenvolvedor Web e Front-End especializado em UX/UI Design">
+    <meta name="author" content="Gabriel Queiroz de Souza">
+    <meta name="keywords" content="desenvolvedor web, front-end, UX/UI, design, portfólio">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Gabriel Queiroz - Desenvolvedor Front-End">
+    <meta property="og:description" content="Portfólio profissional de desenvolvimento web e UX/UI Design">
+    <meta property="og:type" content="website">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0A1F44">
+    
+    <title>Gabriel Queiroz | Desenvolvedor Front-End & UX/UI Designer</title>
+    
+    <!-- Preconnect para otimização -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Progresso de rolagem da página"></div>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar" role="navigation" aria-label="Navegação principal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- Logo -->
+                    <a href="#home" class="logo" aria-label="Ir para início">
+                        <span class="logo-text">GQ<span class="logo-dot">.</span></span>
+                    </a>
+
+                    <!-- Desktop Navigation -->
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link" aria-label="Ir para seção inicial">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link" aria-label="Ir para seção sobre mim">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link" aria-label="Ir para seção de habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link" aria-label="Ir para portfólio">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#media" class="nav-link" aria-label="Ir para seção multimídia">Multimídia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" aria-label="Ir para contato">Contato</a>
+                        </li>
+                    </ul>
+
+                    <!-- Theme Switcher -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="hamburger" id="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+                    <source src="assets/videos/hero-background.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content" data-scroll-reveal>
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Olá, eu sou</span>
+                        <span class="hero-name">Gabriel Queiroz</span>
+                        <span class="hero-subtitle">Desenvolvedor Front-End & UX/UI Designer</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Criando experiências digitais modernas, acessíveis e de alto impacto visual.
+                        Especialista em transformar ideias em interfaces elegantes e funcionais.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <a href="#portfolio" class="btn btn-primary" aria-label="Ver meus projetos">
+                            <span>Ver Projetos</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" aria-label="Entre em contato">
+                            <span>Contato</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="hero-social">
+                        <a href="https://github.com/QsGabriel" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visite meu GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visite meu LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visite meu Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visite meu Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <a href="#about" class="scroll-indicator" aria-label="Rolar para próxima seção">
+                    <span class="scroll-text">Scroll</span>
+                    <span class="scroll-line"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header" data-scroll-reveal>
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p class="section-subtitle">Conheça minha jornada e experiência</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image" data-scroll-reveal>
+                        <div class="image-wrapper">
+                            <img src="assets/img/profile.jpg" alt="Foto de Gabriel Queiroz de Souza, desenvolvedor front-end" class="profile-img">
+                            <div class="image-glow"></div>
+                        </div>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Anos de Experiência</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projetos Concluídos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">30+</span>
+                                <span class="stat-label">Clientes Satisfeitos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text" data-scroll-reveal>
+                        <h3 class="about-heading">Desenvolvedor apaixonado por criar experiências únicas</h3>
+                        
+                        <p class="about-paragraph">
+                            Sou <strong>Gabriel Queiroz de Souza</strong>, desenvolvedor front-end com especialização em UX/UI Design. 
+                            Com mais de 5 anos de experiência, transformo conceitos criativos em interfaces modernas, 
+                            acessíveis e performáticas.
+                        </p>
+                        
+                        <p class="about-paragraph">
+                            Minha paixão é criar produtos digitais que não apenas impressionam visualmente, mas também 
+                            oferecem experiências intuitivas e memoráveis para os usuários. Acredito que o design deve 
+                            ser funcional, bonito e inclusivo.
+                        </p>
+
+                        <div class="skills-summary">
+                            <div class="skill-tag">HTML5 & CSS3</div>
+                            <div class="skill-tag">JavaScript ES6+</div>
+                            <div class="skill-tag">React & Next.js</div>
+                            <div class="skill-tag">UI/UX Design</div>
+                            <div class="skill-tag">Figma & Adobe XD</div>
+                            <div class="skill-tag">Responsive Design</div>
+                            <div class="skill-tag">Web Accessibility</div>
+                            <div class="skill-tag">Git & GitHub</div>
+                        </div>
+
+                        <a href="assets/cv-gabriel-queiroz.pdf" download class="btn btn-primary" aria-label="Baixar currículo em PDF">
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Services Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header" data-scroll-reveal>
+                    <h2 class="section-title">Habilidades & Serviços</h2>
+                    <p class="section-subtitle">Expertise técnica e criativa para transformar suas ideias em realidade</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill Card 1 -->
+                    <article class="skill-card" data-scroll-reveal>
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Desenvolvimento Front-End</h3>
+                        <p class="skill-description">
+                            Criação de interfaces modernas e performáticas utilizando HTML5, CSS3, JavaScript e frameworks modernos como React e Vue.js.
+                        </p>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> HTML5 Semântico</li>
+                            <li><i class="fas fa-check"></i> CSS Moderno (Grid, Flexbox)</li>
+                            <li><i class="fas fa-check"></i> JavaScript ES6+</li>
+                            <li><i class="fas fa-check"></i> React & Next.js</li>
+                        </ul>
+                    </article>
+
+                    <!-- Skill Card 2 -->
+                    <article class="skill-card" data-scroll-reveal>
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">UI/UX Design</h3>
+                        <p class="skill-description">
+                            Design de interfaces centrado no usuário, criando experiências intuitivas, acessíveis e visualmente atraentes.
+                        </p>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> Prototipagem (Figma)</li>
+                            <li><i class="fas fa-check"></i> Design Systems</li>
+                            <li><i class="fas fa-check"></i> User Research</li>
+                            <li><i class="fas fa-check"></i> Wireframing</li>
+                        </ul>
+                    </article>
+
+                    <!-- Skill Card 3 -->
+                    <article class="skill-card" data-scroll-reveal>
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Design Responsivo</h3>
+                        <p class="skill-description">
+                            Desenvolvimento de interfaces que se adaptam perfeitamente a qualquer dispositivo, do mobile ao desktop.
+                        </p>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> Mobile-First Approach</li>
+                            <li><i class="fas fa-check"></i> Cross-Browser Testing</li>
+                            <li><i class="fas fa-check"></i> Fluid Layouts</li>
+                            <li><i class="fas fa-check"></i> Media Queries</li>
+                        </ul>
+                    </article>
+
+                    <!-- Skill Card 4 -->
+                    <article class="skill-card" data-scroll-reveal>
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Acessibilidade Web</h3>
+                        <p class="skill-description">
+                            Implementação de práticas de acessibilidade (WCAG) garantindo que todos possam usar suas aplicações.
+                        </p>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> ARIA Labels</li>
+                            <li><i class="fas fa-check"></i> Keyboard Navigation</li>
+                            <li><i class="fas fa-check"></i> Screen Reader Support</li>
+                            <li><i class="fas fa-check"></i> Color Contrast</li>
+                        </ul>
+                    </article>
+
+                    <!-- Skill Card 5 -->
+                    <article class="skill-card" data-scroll-reveal>
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Otimização & Performance</h3>
+                        <p class="skill-description">
+                            Foco em entregar aplicações rápidas e otimizadas, com as melhores práticas de performance web.
+                        </p>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> Code Splitting</li>
+                            <li><i class="fas fa-check"></i> Lazy Loading</li>
+                            <li><i class="fas fa-check"></i> Image Optimization</li>
+                            <li><i class="fas fa-check"></i> SEO Best Practices</li>
+                        </ul>
+                    </article>
+
+                    <!-- Skill Card 6 -->
+                    <article class="skill-card" data-scroll-reveal>
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Animações & Interações</h3>
+                        <p class="skill-description">
+                            Criação de micro-interações e animações fluidas que elevam a experiência do usuário.
+                        </p>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> CSS Animations</li>
+                            <li><i class="fas fa-check"></i> GSAP & Framer Motion</li>
+                            <li><i class="fas fa-check"></i> Scroll Animations</li>
+                            <li><i class="fas fa-check"></i> Interactive Transitions</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="section-header" data-scroll-reveal>
+                    <h2 class="section-title">Portfólio</h2>
+                    <p class="section-subtitle">Projetos selecionados que demonstram minha expertise</p>
+                </div>
+
+                <!-- Portfolio Filter -->
+                <div class="portfolio-filter" data-scroll-reveal>
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <!-- Projects will be loaded dynamically from JSON -->
+                </div>
+
+                <!-- Load More Button -->
+                <div class="portfolio-actions" data-scroll-reveal>
+                    <button class="btn btn-primary" id="loadMoreBtn">
+                        <span>Carregar Mais Projetos</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section class="media section" id="media">
+            <div class="container">
+                <div class="section-header" data-scroll-reveal>
+                    <h2 class="section-title">Multimídia</h2>
+                    <p class="section-subtitle">Conteúdo interativo e demonstrações</p>
+                </div>
+
+                <div class="media-grid">
+                    <!-- Video Showcase -->
+                    <div class="media-card media-video" data-scroll-reveal>
+                        <h3 class="media-title">Apresentação em Vídeo</h3>
+                        <p class="media-description">Conheça mais sobre meu trabalho e processo criativo</p>
+                        
+                        <div class="video-wrapper">
+                            <div class="video-container" id="videoContainer">
+                                <iframe 
+                                    id="youtubeVideo"
+                                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                    title="Vídeo de apresentação de Gabriel Queiroz"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                            
+                            <button class="video-play-btn" id="videoPlayBtn" aria-label="Reproduzir vídeo">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Demo -->
+                    <div class="media-card media-interactive" data-scroll-reveal>
+                        <h3 class="media-title">Demo Interativo</h3>
+                        <p class="media-description">Experimente um exemplo de interface interativa</p>
+                        
+                        <div class="interactive-demo">
+                            <div class="demo-controls">
+                                <button class="demo-btn" id="animateBtn" aria-label="Iniciar animação">
+                                    <i class="fas fa-play"></i> Animar
+                                </button>
+                                <button class="demo-btn" id="resetBtn" aria-label="Resetar animação">
+                                    <i class="fas fa-redo"></i> Reset
+                                </button>
+                            </div>
+                            
+                            <div class="demo-canvas">
+                                <div class="demo-element" id="demoElement1"></div>
+                                <div class="demo-element" id="demoElement2"></div>
+                                <div class="demo-element" id="demoElement3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Audio Experience (opcional) -->
+                    <div class="media-card media-full" data-scroll-reveal>
+                        <h3 class="media-title">Background Interativo</h3>
+                        <p class="media-description">Experiência visual dinâmica com partículas animadas</p>
+                        
+                        <div class="particles-container" id="particlesContainer">
+                            <canvas id="particlesCanvas" aria-hidden="true"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header" data-scroll-reveal>
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">Vamos criar algo incrível juntos!</p>
+                </div>
+
+                <div class="contact-content">
+                    <!-- Contact Info -->
+                    <div class="contact-info" data-scroll-reveal>
+                        <h3 class="contact-heading">Informações de Contato</h3>
+                        <p class="contact-text">
+                            Estou sempre aberto para discutir novos projetos, ideias criativas ou oportunidades 
+                            de colaboração. Sinta-se à vontade para entrar em contato!
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text-wrapper">
+                                    <h4>Email</h4>
+                                    <a href="mailto:gabrielqueiroz@hotmail.com">gabrielqueiroz@hotmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text-wrapper">
+                                    <h4>Telefone</h4>
+                                    <a href="tel:+5561984975160">+55 61 98497-5160</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text-wrapper">
+                                    <h4>Localização</h4>
+                                    <p>Brasília, DF - Brasil</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="contact-social">
+                            <a href="https://github.com/QsGabriel" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Dribbble">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contactForm" data-scroll-reveal novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome Completo *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="nameError"
+                                placeholder="Seu nome completo">
+                            <span class="form-error" id="nameError" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="emailError"
+                                placeholder="seu.email@exemplo.com">
+                            <span class="form-error" id="emailError" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Assunto *</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                class="form-input" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="subjectError"
+                                placeholder="Assunto da mensagem">
+                            <span class="form-error" id="subjectError" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-input form-textarea" 
+                                rows="5" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="messageError"
+                                placeholder="Escreva sua mensagem aqui..."></textarea>
+                            <span class="form-error" id="messageError" role="alert"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" aria-label="Enviar mensagem">
+                            <span>Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <!-- Success/Error Messages -->
+                        <div class="form-message" id="formMessage" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Brand -->
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo" aria-label="Voltar ao início">
+                        <span class="logo-text">GQ<span class="logo-dot">.</span></span>
+                    </a>
+                    <p class="footer-description">
+                        Desenvolvedor Front-End & UX/UI Designer apaixonado por criar experiências digitais únicas.
+                    </p>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <h4 class="footer-title">Navegação</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Social -->
+                <div class="footer-social-section">
+                    <h4 class="footer-title">Redes Sociais</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com/QsGabriel" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2025 Gabriel Queiroz de Souza. Todos os direitos reservados.
+                </p>
+                <p class="footer-credits">
+                    Desenvolvido com <i class="fas fa-heart"></i> e muito <i class="fas fa-coffee"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/media.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

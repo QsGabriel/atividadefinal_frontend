@@ -5,90 +5,49 @@
       "title": "E-commerce Dashboard",
       "description": "Dashboard administrativo completo para e-commerce com análises em tempo real, gestão de produtos e relatórios detalhados.",
       "category": "web",
-      "image": "assets/img/portfolio/project-1.jpg",
-      "tags": ["React", "TypeScript", "Chart.js", "API REST"],
-      "liveUrl": "https://exemplo.com/project1",
+      "image": "assets\\img\\portfolio\\project-1.png",
+      "tags": ["React", "TypeScript", "Node.js", "API REST"],
+      "liveUrl": "https://flow-lab.netlify.app/",
       "githubUrl": "https://github.com/QsGabriel/project1"
     },
     {
       "id": 2,
-      "title": "Figma UI Kit - Fintech",
-      "description": "Kit completo de componentes UI/UX para aplicativos financeiros, incluindo design system e guia de estilo.",
-      "category": "design",
-      "image": "assets/img/portfolio/project-2.jpg",
-      "tags": ["Figma", "UI/UX", "Design System", "Fintech"],
-      "liveUrl": "https://www.figma.com/example",
-      "githubUrl": null
+      "title": "Landing Page - Startup Tech",
+      "description": "Landing page futurista para startup de tecnologia, com animações 3D, scroll narrativo e formulário de captação.",
+      "category": "landing",
+      "image": "assets\\img\\portfolio\\project-2.png",
+      "tags": ["Svelte", "AI Integration", "API REST", "Parallax"],
+      "liveUrl": "https://betechfind.vercel.app/",
+      "githubUrl": "https://github.com/QsGabriel/techfind"
     },
     {
       "id": 3,
-      "title": "Landing Page - SaaS",
-      "description": "Landing page moderna e responsiva para produto SaaS B2B, otimizada para conversão com animações fluidas.",
-      "category": "landing",
-      "image": "assets/img/portfolio/project-3.jpg",
-      "tags": ["HTML5", "CSS3", "JavaScript", "GSAP"],
-      "liveUrl": "https://exemplo.com/saas-landing",
-      "githubUrl": "https://github.com/QsGabriel/saas-landing"
-    },
-    {
-      "id": 4,
-      "title": "App de Gestão de Tarefas",
-      "description": "Aplicação web para gestão de projetos e tarefas com drag-and-drop, notificações e colaboração em equipe.",
-      "category": "web",
-      "image": "assets/img/portfolio/project-4.jpg",
-      "tags": ["Vue.js", "Vuex", "Firebase", "PWA"],
-      "liveUrl": "https://exemplo.com/task-app",
-      "githubUrl": "https://github.com/QsGabriel/task-manager"
-    },
-    {
-      "id": 5,
-      "title": "Redesign - App Mobile",
-      "description": "Redesign completo de aplicativo de delivery, focando em melhorar UX, acessibilidade e conversão.",
+      "title": "Protótipo de App delivery",
+      "description": "Wireframe completo de aplicativo de delivery, focando em melhorar UX, acessibilidade e conversão.",
       "category": "design",
-      "image": "assets/img/portfolio/project-5.jpg",
-      "tags": ["Adobe XD", "Prototyping", "User Research", "Mobile"],
-      "liveUrl": "https://behance.net/example",
+      "image": "assets\\img\\portfolio\\project-3.png",
+      "tags": ["Figma", "Prototyping", "User Research", "Mobile"],
+      "liveUrl": "https://www.figma.com/proto/ruafXxguKEM2KblMSsWL5Q/Ifruit?node-id=230-26&p=f&t=de1wQtAQDwLSAiw0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=230%3A26&show-proto-sidebar=1",
       "githubUrl": null
     },
     {
-      "id": 6,
+      "id": 4,
       "title": "Portfolio Criativo",
       "description": "Portfolio interativo para fotógrafo profissional com galeria dinâmica, lightbox e filtros personalizados.",
       "category": "landing",
       "image": "assets/img/portfolio/project-6.jpg",
-      "tags": ["Next.js", "Tailwind CSS", "Framer Motion", "SEO"],
-      "liveUrl": "https://exemplo.com/photographer",
+      "tags": ["HTML5", "Advanced CSS", "Framer Motion", "JavaScript"],
+      "liveUrl": "https://portfoliogabrielqueiroz.vercel.app/",
       "githubUrl": "https://github.com/QsGabriel/photo-portfolio"
     },
     {
-      "id": 7,
-      "title": "Plataforma de Cursos Online",
-      "description": "Sistema completo de EAD com player de vídeo, progresso de aulas, certificados e área de membros.",
-      "category": "web",
-      "image": "assets/img/portfolio/project-7.jpg",
-      "tags": ["React", "Node.js", "MongoDB", "Stripe"],
-      "liveUrl": "https://exemplo.com/cursos",
-      "githubUrl": "https://github.com/QsGabriel/ead-platform"
-    },
-    {
-      "id": 8,
-      "title": "Design System - Empresa",
-      "description": "Design system corporativo completo com componentes reutilizáveis, tokens de design e documentação.",
-      "category": "design",
-      "image": "assets/img/portfolio/project-8.jpg",
-      "tags": ["Figma", "Storybook", "Design Tokens", "Documentation"],
-      "liveUrl": "https://storybook.example.com",
-      "githubUrl": "https://github.com/QsGabriel/design-system"
-    },
-    {
-      "id": 9,
-      "title": "Landing Page - Startup Tech",
-      "description": "Landing page futurista para startup de tecnologia, com animações 3D, scroll narrativo e formulário de captação.",
+      "id": 5,
+      "title": "Landing Page - Comercial",
+      "description": "Página Comercial de demonstração de empresa de refrigeração com automação de contato com chatbot de IA.",
       "category": "landing",
-      "image": "assets/img/portfolio/project-9.jpg",
-      "tags": ["Three.js", "GSAP", "WebGL", "Parallax"],
-      "liveUrl": "https://exemplo.com/tech-startup",
-      "githubUrl": "https://github.com/QsGabriel/tech-landing"
-    }
+      "image": "assets/img/portfolio/project-5.jpg",
+      "tags": ["Vue.js", "Automação com IA", "Supabase", "PWA"],
+      "liveUrl": "https://frigoclima-6vc86ormq-gabriel-queirozs-projects-c09949ef.vercel.app/",
+      "githubUrl": "
   ]
 }

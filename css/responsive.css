@@ -127,6 +127,30 @@
     font-size: var(--font-size-xs);
   }
 
+  .portfolio-overlay {
+    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-lg);
+  }
+
+  .portfolio-title {
+    font-size: var(--font-size-lg);
+  }
+
+  .portfolio-description {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    max-height: 3em;
+  }
+
+  .portfolio-tags {
+    max-height: 3rem;
+  }
+
+  .portfolio-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
   /* Footer */
   .footer-content {
     grid-template-columns: 1fr;

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de Cores - Azul Profundo Futurista</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: radial-gradient(circle at 30% 20%, #0A2E5A 0%, #071B34 40%, #030A1A 100%);
+            color: #F5F8FF;
+            padding: 3rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            text-shadow: 0 0 12px rgba(122, 183, 255, 0.35);
+            background: linear-gradient(135deg, #F5F8FF 0%, #7AB7FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .color-card {
+            background: rgba(7, 27, 52, 0.45);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .color-card:hover {
+            border-color: #7AB7FF;
+            box-shadow: 0 0 18px rgba(122, 183, 255, 0.25);
+            transform: translateY(-5px);
+        }
+
+        .color-sample {
+            height: 120px;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .color-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #7AB7FF;
+        }
+
+        .color-hex {
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            color: rgba(245, 248, 255, 0.75);
+            margin-bottom: 0.5rem;
+        }
+
+        .color-usage {
+            font-size: 0.875rem;
+            color: rgba(245, 248, 255, 0.6);
+            font-style: italic;
+        }
+
+        .gradient-section {
+            margin-top: 3rem;
+        }
+
+        .gradient-card {
+            background: rgba(7, 27, 52, 0.45);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .gradient-sample {
+            height: 150px;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .gradient-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #7AB7FF;
+        }
+
+        .gradient-code {
+            background: rgba(3, 10, 26, 0.6);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            color: rgba(245, 248, 255, 0.85);
+            overflow-x: auto;
+        }
+
+        .effects-section {
+            margin-top: 3rem;
+        }
+
+        .effect-demo {
+            background: rgba(7, 27, 52, 0.45);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .glow-text {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #F5F8FF;
+            text-shadow: 0 0 12px rgba(122, 183, 255, 0.35);
+            margin-bottom: 0.5rem;
+        }
+
+        .glow-box {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(90deg, #0A2E5A, #155AAE);
+            border-radius: 1rem;
+            color: #F5F8FF;
+            box-shadow: 0 0 18px rgba(122, 183, 255, 0.25);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Paleta de Cores - Azul Profundo Futurista</h1>
+
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-sample" style="background: #030A1A;"></div>
+                <div class="color-name">Deep Black</div>
+                <div class="color-hex">#030A1A</div>
+                <div class="color-usage">Background principal escuro</div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-sample" style="background: #071B34;"></div>
+                <div class="color-name">Navy Intense</div>
+                <div class="color-hex">#071B34</div>
+                <div class="color-usage">Cards, footer, gradientes</div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-sample" style="background: #0A2E5A;"></div>
+                <div class="color-name">Blue Medium</div>
+                <div class="color-hex">#0A2E5A</div>
+                <div class="color-usage">Gradientes, acentos</div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-sample" style="background: #7AB7FF;"></div>
+                <div class="color-name">Blue Glow</div>
+                <div class="color-hex">#7AB7FF</div>
+                <div class="color-usage">Destaques, ícones, hovers</div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-sample" style="background: #F5F8FF;"></div>
+                <div class="color-name">Soft White</div>
+                <div class="color-hex">#F5F8FF</div>
+                <div class="color-usage">Textos principais</div>
+            </div>
+        </div>
+
+        <div class="gradient-section">
+            <h2 class="gradient-title">📐 Gradientes</h2>
+
+            <div class="gradient-card">
+                <div class="gradient-sample" style="background: radial-gradient(circle at 30% 20%, #0A2E5A 0%, #071B34 40%, #030A1A 100%);"></div>
+                <div class="gradient-code">
+                    radial-gradient(circle at 30% 20%, #0A2E5A 0%, #071B34 40%, #030A1A 100%)
+                </div>
+            </div>
+
+            <div class="gradient-card">
+                <div class="gradient-sample" style="background: linear-gradient(135deg, #071B34 0%, #030A1A 80%);"></div>
+                <div class="gradient-code">
+                    linear-gradient(135deg, #071B34 0%, #030A1A 80%)
+                </div>
+            </div>
+
+            <div class="gradient-card">
+                <div class="gradient-sample" style="background: linear-gradient(90deg, #0A2E5A, #155AAE);"></div>
+                <div class="gradient-code">
+                    linear-gradient(90deg, #0A2E5A, #155AAE)
+                </div>
+            </div>
+
+            <div class="gradient-card">
+                <div class="gradient-sample" style="background: linear-gradient(135deg, #F5F8FF 0%, #7AB7FF 100%);"></div>
+                <div class="gradient-code">
+                    linear-gradient(135deg, #F5F8FF 0%, #7AB7FF 100%)
+                </div>
+            </div>
+        </div>
+
+        <div class="effects-section">
+            <h2 class="gradient-title">✨ Efeitos</h2>
+
+            <div class="effect-demo">
+                <div class="glow-text">Texto com Glow Effect</div>
+                <div style="font-size: 0.875rem; color: rgba(245, 248, 255, 0.6);">
+                    text-shadow: 0 0 12px rgba(122, 183, 255, 0.35);
+                </div>
+            </div>
+
+            <div class="effect-demo">
+                <div class="glow-box">Box com Glow Effect</div>
+                <div style="font-size: 0.875rem; color: rgba(245, 248, 255, 0.6); margin-top: 1rem;">
+                    box-shadow: 0 0 18px rgba(122, 183, 255, 0.25);
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

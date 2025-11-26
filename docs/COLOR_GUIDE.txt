@@ -1,0 +1,143 @@
+/* ========================================
+   GUIA RÁPIDO DE CORES - PALETA AZUL PROFUNDA
+   ======================================== */
+
+/* 
+  Use este guia para manter consistência ao adicionar
+  novos componentes ou fazer ajustes futuros
+*/
+
+/* CORES BASE */
+--color-deep-black: #030A1A        /* Background escuro principal */
+--color-navy-intense: #071B34      /* Background cards e seções */
+--color-blue-medium: #0A2E5A       /* Acentos e gradientes */
+--color-blue-glow: #7AB7FF         /* Destaques, ícones, hovers */
+--color-text-soft: #F5F8FF         /* Textos principais */
+
+/* GRADIENTES PRINCIPAIS */
+Background Hero:
+  radial-gradient(circle at 20% 30%, #0A2E5A 0%, #071B34 35%, #030A1A 100%)
+
+Background Geral:
+  radial-gradient(circle at 30% 20%, #0A2E5A 0%, #071B34 40%, #030A1A 100%)
+
+Background Secundário:
+  linear-gradient(135deg, #071B34 0%, #030A1A 80%)
+
+Botões e Acentos:
+  linear-gradient(90deg, #0A2E5A, #155AAE)
+
+Títulos:
+  linear-gradient(135deg, #F5F8FF 0%, #7AB7FF 100%)
+
+/* TRANSPARÊNCIAS E OPACIDADES */
+Glass Background:
+  rgba(7, 27, 52, 0.45)
+
+Glass Border:
+  rgba(255, 255, 255, 0.05)
+
+Glass Border Hover:
+  rgba(122, 183, 255, 0.35)
+
+Texto Corpo:
+  rgba(245, 248, 255, 0.75)
+
+Texto Subtítulo:
+  rgba(245, 248, 255, 0.7)
+
+Texto Footer:
+  rgba(245, 248, 255, 0.6)
+
+/* EFEITOS GLOW/SHADOW */
+Text Glow (Títulos):
+  text-shadow: 0 0 12px rgba(122, 183, 255, 0.35);
+  filter: drop-shadow(0 0 12px rgba(122, 183, 255, 0.35));
+
+Box Glow (Primário):
+  box-shadow: 0 0 18px rgba(122, 183, 255, 0.25);
+
+Box Glow (Secundário):
+  box-shadow: 0 0 12px rgba(122, 183, 255, 0.35);
+
+Box Glow (Intenso):
+  box-shadow: 0 0 24px rgba(122, 183, 255, 0.4);
+
+/* GLASSMORPHISM PADRÃO */
+background: rgba(7, 27, 52, 0.45);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border: 1px solid rgba(255, 255, 255, 0.05);
+
+/* GLASSMORPHISM HOVER */
+background: rgba(10, 46, 90, 0.3);
+border-color: #7AB7FF;
+box-shadow: 0 0 18px rgba(122, 183, 255, 0.25);
+
+/* BOTÕES */
+Primário:
+  background: linear-gradient(90deg, #0A2E5A, #155AAE);
+  box-shadow: 0 0 18px rgba(122, 183, 255, 0.25);
+  color: #F5F8FF;
+
+Secundário:
+  border: 1px solid rgba(122, 183, 255, 0.35);
+  background: transparent;
+  color: #F5F8FF;
+
+/* ÍCONES */
+Cor padrão: #7AB7FF
+Hover: #F5F8FF com glow
+Filter: drop-shadow(0 0 4px rgba(122, 183, 255, 0.4));
+
+/* LINKS */
+Padrão: rgba(245, 248, 255, 0.75)
+Hover: #7AB7FF
+Text-shadow hover: 0 0 12px rgba(122, 183, 255, 0.35);
+
+/* BORDAS */
+Neutra: rgba(255, 255, 255, 0.05)
+Destaque: rgba(122, 183, 255, 0.35)
+Hover: #7AB7FF
+
+/* INPUTS/FORMULÁRIOS */
+Background: rgba(7, 27, 52, 0.5)
+Border: rgba(255, 255, 255, 0.05)
+Focus Border: #7AB7FF
+Focus Shadow: 0 0 0 3px rgba(122, 183, 255, 0.15)
+Placeholder: rgba(245, 248, 255, 0.4)
+
+/* ========================================
+   EXEMPLOS DE USO
+   ======================================== */
+
+/* Card Padrão */
+.exemplo-card {
+  background: rgba(7, 27, 52, 0.45);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1.5rem;
+}
+
+.exemplo-card:hover {
+  border-color: #7AB7FF;
+  box-shadow: 0 0 18px rgba(122, 183, 255, 0.25);
+  background: rgba(10, 46, 90, 0.3);
+}
+
+/* Título com Glow */
+.exemplo-titulo {
+  color: #F5F8FF;
+  text-shadow: 0 0 12px rgba(122, 183, 255, 0.35);
+}
+
+/* Ícone */
+.exemplo-icone {
+  color: #7AB7FF;
+  filter: drop-shadow(0 0 4px rgba(122, 183, 255, 0.4));
+}
+
+.exemplo-icone:hover {
+  color: #F5F8FF;
+  filter: drop-shadow(0 0 8px rgba(122, 183, 255, 0.6));
+}

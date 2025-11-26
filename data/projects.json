@@ -35,7 +35,7 @@
       "title": "Portfolio Criativo",
       "description": "Portfolio interativo para fotógrafo profissional com galeria dinâmica, lightbox e filtros personalizados.",
       "category": "landing",
-      "image": "assets/img/portfolio/project-6.jpg",
+      "image": "assets\\img\\portfolio\\project-4.png",
       "tags": ["HTML5", "Advanced CSS", "Framer Motion", "JavaScript"],
       "liveUrl": "https://portfoliogabrielqueiroz.vercel.app/",
       "githubUrl": "https://github.com/QsGabriel/photo-portfolio"
@@ -45,7 +45,7 @@
       "title": "Landing Page - Comercial",
       "description": "Página Comercial de demonstração de empresa de refrigeração com automação de contato com chatbot de IA.",
       "category": "landing",
-      "image": "assets/img/portfolio/project-5.jpg",
+      "image": "assets\\img\\portfolio\\project-5.png",
       "tags": ["Vue.js", "Automação com IA", "Supabase", "PWA"],
       "liveUrl": "https://frigoclima-6vc86ormq-gabriel-queirozs-projects-c09949ef.vercel.app/",
       "githubUrl": "https://github.com/QsGabriel/frigoclima-landing-page"

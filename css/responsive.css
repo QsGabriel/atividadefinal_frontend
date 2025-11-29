@@ -6,10 +6,48 @@
 ==========================================
 */
 
+/* ===== GLOBAL RESPONSIVE FIXES ===== */
+* {
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  box-sizing: border-box;
+}
+
+.section {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent fixed/absolute elements from causing overflow */
+.scroll-progress,
+.header,
+body::before,
+body::after {
+  max-width: 100vw;
+  left: 0;
+  right: 0;
+}
+
 /* ===== TABLET (768px and up) ===== */
 @media screen and (max-width: 1024px) {
   .container {
     padding: 0 var(--spacing-md);
+    max-width: 100%;
   }
 
   .hero-name {
@@ -23,10 +61,17 @@
 
   .stats-grid {
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
   }
 
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    width: 100%;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    width: 100%;
   }
 
   .contact-content {
@@ -45,6 +90,33 @@
     --font-size-5xl: 2rem;
     --font-size-4xl: 1.75rem;
     --font-size-3xl: 1.5rem;
+  }
+
+  /* Global Mobile Fixes */
+  body {
+    overflow-x: hidden !important;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+    max-width: 100%;
+  }
+
+  /* Header */
+  .header {
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .nav-wrapper {
+    width: 100%;
+    padding: 0;
   }
 
   /* Navigation */
@@ -77,8 +149,16 @@
   }
 
   /* Hero Section */
+  .hero {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
   .hero-content {
     padding: var(--spacing-xl) var(--spacing-md);
+    width: 100%;
+    max-width: 100%;
   }
 
   .hero-greeting {
@@ -96,26 +176,56 @@
   .hero-cta {
     flex-direction: column;
     gap: var(--spacing-md);
+    width: 100%;
   }
 
   .btn {
     width: 100%;
     justify-content: center;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Hero Content */
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-subtitle,
+  .hero-description {
+    max-width: 100%;
+    padding: 0 var(--spacing-sm);
   }
 
   /* Stats Grid */
   .stats-grid {
     grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
   }
 
   /* Skills Grid */
   .skills-grid {
     grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .skill-card {
+    width: 100%;
+    max-width: 100%;
   }
 
   /* Portfolio */
   .portfolio-grid {
     grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .portfolio-card {
+    width: 100%;
+    max-width: 100%;
   }
 
   .portfolio-filter {
@@ -152,9 +262,16 @@
   }
 
   /* Footer */
+  .footer {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
+    width: 100%;
   }
 
   .footer-brand {
@@ -186,12 +303,26 @@
 
 /* ===== SMALL MOBILE (480px and below) ===== */
 @media screen and (max-width: 480px) {
+  /* Global */
+  body,
+  html {
+    overflow-x: hidden !important;
+    max-width: 100vw;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
   .section {
     padding: var(--spacing-2xl) 0;
+    width: 100%;
+    max-width: 100%;
   }
 
   .section-header {
     margin-bottom: var(--spacing-2xl);
+    width: 100%;
   }
 
   .hero-name {

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geração de Propostas Comerciais, Orçamentos e Contratos - Gabriel Queiroz">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <title>Propostas e Contratos | Gabriel Queiroz</title>
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos Isolados da Página -->
+    <link rel="stylesheet" href="css/proposals.css">
+</head>
+<body class="proposals-page">
+    <!-- Header -->
+    <header class="pp-header">
+        <a href="index.html" class="pp-back-btn">
+            <i class="fas fa-arrow-left"></i>
+            <span>Voltar</span>
+        </a>
+        
+        <h1 class="pp-header-title">Gerador de Documentos</h1>
+        
+        <div class="pp-header-actions">
+            <button type="button" class="pp-btn pp-btn-secondary" id="btnOpenDrafts">
+                <i class="fas fa-folder-open"></i>
+                <span>Meus Rascunhos</span>
+            </button>
+            <a href="index.html" class="pp-logo">
+                <span class="pp-logo-text">GQ<span class="pp-logo-dot">.</span></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pp-main">
+        <!-- Painel do Formulário -->
+        <div class="pp-form-panel">
+            
+            <!-- Seção 1: Identificação -->
+            <section class="pp-section">
+                <div class="pp-section-header">
+                    <h2 class="pp-section-title">
+                        <span class="pp-section-icon"><i class="fas fa-file-alt"></i></span>
+                        Identificação do Documento
+                    </h2>
+                    <i class="fas fa-chevron-down pp-section-toggle"></i>
+                </div>
+                <div class="pp-section-content">
+                    <!-- ID do Documento -->
+                    <div class="pp-document-id">
+                        <span class="pp-document-id-label">ID:</span>
+                        <span id="documentId">—</span>
+                        <button type="button" class="pp-copy-btn" id="btnCopyId" title="Copiar ID">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="pp-form-row">
+                        <div class="pp-form-group">
+                            <label class="pp-label pp-label-required" for="tipoDocumento">Tipo de Documento</label>
+                            <select id="tipoDocumento" class="pp-select">
+                                <option value="proposta">Proposta Comercial</option>
+                                <option value="orcamento">Orçamento</option>
+                                <option value="contrato">Contrato</option>
+                            </select>
+                        </div>
+                        
+                        <div class="pp-form-group">
+                            <label class="pp-label pp-label-required" for="dataEmissao">Data de Emissão</label>
+                            <input type="date" id="dataEmissao" class="pp-input">
+                        </div>
+                        
+                        <div class="pp-form-group">
+                            <label class="pp-label pp-label-required" for="validade">Validade</label>
+                            <input type="date" id="validade" class="pp-input">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Seção 2: Dados do Cliente -->
+            <section class="pp-section">
+                <div class="pp-section-header">
+                    <h2 class="pp-section-title">
+                        <span class="pp-section-icon"><i class="fas fa-user-tie"></i></span>
+                        Dados do Cliente
+                    </h2>
+                    <i class="fas fa-chevron-down pp-section-toggle"></i>
+                </div>
+                <div class="pp-section-content">
+                    <div class="pp-form-row">
+                        <div class="pp-form-group">
+                            <label class="pp-label pp-label-required" for="clienteNome">Nome / Razão Social</label>
+                            <input type="text" id="clienteNome" class="pp-input" placeholder="Ex: Empresa XYZ Ltda">
+                        </div>
+                        
+                        <div class="pp-form-group">
+                            <label class="pp-label" for="clienteResponsavel">Responsável</label>
+                            <input type="text" id="clienteResponsavel" class="pp-input" placeholder="Nome do responsável">
+                        </div>
+                    </div>
+                    
+                    <div class="pp-form-row">
+                        <div class="pp-form-group">
+                            <label class="pp-label pp-label-required" for="clienteEmail">E-mail</label>
+                            <input type="email" id="clienteEmail" class="pp-input" placeholder="contato@empresa.com">
+                        </div>
+                        
+                        <div class="pp-form-group">
+                            <label class="pp-label pp-label-required" for="clienteDocumento">CPF / CNPJ</label>
+                            <input type="text" id="clienteDocumento" class="pp-input" placeholder="00.000.000/0000-00">
+                        </div>
+                    </div>
+                    
+                    <div class="pp-form-group">
+                        <label class="pp-label" for="clienteEndereco">Endereço (opcional)</label>
+                        <input type="text" id="clienteEndereco" class="pp-input" placeholder="Rua, número, cidade - UF">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Seção 3: Escopo e Itens -->
+            <section class="pp-section">
+                <div class="pp-section-header">
+                    <h2 class="pp-section-title">
+                        <span class="pp-section-icon"><i class="fas fa-tasks"></i></span>
+                        Escopo e Itens
+                    </h2>
+                    <i class="fas fa-chevron-down pp-section-toggle"></i>
+                </div>
+                <div class="pp-section-content">
+                    <div class="pp-form-group">
+                        <label class="pp-label" for="descricaoProjeto">Descrição Geral do Projeto</label>
+                        <textarea id="descricaoProjeto" class="pp-textarea" placeholder="Descreva o escopo geral do projeto..."></textarea>
+                    </div>
+                    
+                    <div class="pp-form-group">
+                        <label class="pp-label">Entregáveis e Requisitos</label>
+                        <p style="font-size: 0.75rem; color: rgba(245, 248, 255, 0.5); margin-bottom: 0.75rem;">
+                            Adicione funcionalidades e seus requisitos funcionais (RF) ou não funcionais (RNF). Use **texto** para negrito, _texto_ para itálico e `texto` para código.
+                        </p>
+                        <div id="deliverablesList" class="pp-deliverables-list">
+                            <!-- Renderizado via JavaScript -->
+                        </div>
+                        <button type="button" class="pp-add-item" id="btnAddDeliverable">
+                            <i class="fas fa-plus"></i>
+                            Adicionar Entregável
+                        </button>
+                    </div>
+                    
+                    <div class="pp-form-group">
+                        <label class="pp-label">Itens e Valores</label>
+                        <table class="pp-items-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 45%;">Descrição</th>
+                                    <th style="width: 15%;">Qtd</th>
+                                    <th style="width: 20%;">Valor Unit.</th>
+                                    <th style="width: 15%;">Total</th>
+                                    <th style="width: 5%;"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="itemsTableBody">
+                                <tr>
+                                    <td>
+                                        <input type="text" class="pp-input item-desc" placeholder="Descrição do item">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="pp-input pp-input-qty item-qty" min="1" value="1">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="pp-input pp-input-price item-price" min="0" step="0.01" value="0">
+                                    </td>
+                                    <td class="pp-item-total">R$ 0,00</td>
+                                    <td>
+                                        <button type="button" class="pp-remove-item" title="Remover item">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button type="button" class="pp-add-item" id="btnAddItem">
+                            <i class="fas fa-plus"></i>
+                            Adicionar Item
+                        </button>
+                    </div>
+                    
+                    <div class="pp-total-row">
+                        <span class="pp-total-label">VALOR TOTAL</span>
+                        <span class="pp-total-value" id="grandTotal">R$ 0,00</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Seção 4: Condições -->
+            <section class="pp-section">
+                <div class="pp-section-header">
+                    <h2 class="pp-section-title">
+                        <span class="pp-section-icon"><i class="fas fa-handshake"></i></span>
+                        Condições Comerciais
+                    </h2>
+                    <i class="fas fa-chevron-down pp-section-toggle"></i>
+                </div>
+                <div class="pp-section-content">
+                    <div class="pp-form-row">
+                        <div class="pp-form-group">
+                            <label class="pp-label" for="prazo">Prazo de Execução</label>
+                            <input type="text" id="prazo" class="pp-input" placeholder="Ex: 30 dias úteis">
+                        </div>
+                        
+                        <div class="pp-form-group">
+                            <label class="pp-label" for="formaPagamento">Forma de Pagamento</label>
+                            <input type="text" id="formaPagamento" class="pp-input" placeholder="Ex: 50% entrada + 50% entrega">
+                        </div>
+                    </div>
+                    
+                    <div class="pp-form-group">
+                        <label class="pp-label" for="condicoesAdicionais">Condições Adicionais</label>
+                        <textarea id="condicoesAdicionais" class="pp-textarea" placeholder="Condições especiais ou observações..."></textarea>
+                    </div>
+                    
+                    <div class="pp-form-group">
+                        <label class="pp-label" for="garantias">Garantias e Suporte</label>
+                        <textarea id="garantias" class="pp-textarea" placeholder="Descreva as garantias oferecidas..."></textarea>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Barra de Ações -->
+            <div class="pp-actions-bar">
+                <button type="button" class="pp-btn pp-btn-secondary" id="btnSaveDraft">
+                    <i class="fas fa-save"></i>
+                    Salvar Rascunho
+                </button>
+                <button type="button" class="pp-btn pp-btn-primary" id="btnExportPdf">
+                    <i class="fas fa-file-pdf"></i>
+                    Exportar PDF
+                </button>
+                <button type="button" class="pp-btn pp-btn-success" disabled title="Em breve">
+                    <i class="fas fa-paper-plane"></i>
+                    Enviar
+                </button>
+            </div>
+        </div>
+        
+        <!-- Painel de Preview -->
+        <aside class="pp-preview-panel">
+            <div class="pp-preview-wrapper">
+                <div class="pp-preview-header">
+                    <h3 class="pp-preview-title">
+                        <i class="fas fa-eye"></i>
+                        Preview do Documento
+                    </h3>
+                    <div class="pp-preview-actions">
+                        <button type="button" class="pp-btn pp-btn-icon pp-btn-secondary" onclick="window.print()" title="Imprimir">
+                            <i class="fas fa-print"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="pp-preview-content">
+                    <div class="pp-document" id="documentPreview">
+                        <!-- Preview será renderizado aqui via JavaScript -->
+                        <div class="pp-loading">
+                            <div class="pp-spinner"></div>
+                            <span>Carregando preview...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    
+    <!-- Toast Container -->
+    <div class="pp-toast-container" id="toastContainer"></div>
+    
+    <!-- Modal de Rascunhos -->
+    <div class="pp-modal-overlay" id="draftsModal">
+        <div class="pp-modal">
+            <div class="pp-modal-header">
+                <h2 class="pp-modal-title">
+                    <i class="fas fa-folder-open"></i>
+                    Meus Rascunhos
+                </h2>
+                <button type="button" class="pp-modal-close" id="btnCloseDrafts">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="pp-modal-body">
+                <div class="pp-drafts-filters">
+                    <div class="pp-search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchDrafts" class="pp-input" placeholder="Buscar por cliente ou ID...">
+                    </div>
+                    <select id="filterTipo" class="pp-select pp-select-sm">
+                        <option value="">Todos os tipos</option>
+                        <option value="proposta">Propostas</option>
+                        <option value="orcamento">Orçamentos</option>
+                        <option value="contrato">Contratos</option>
+                    </select>
+                </div>
+                <div class="pp-drafts-list" id="draftsList">
+                    <div class="pp-loading">
+                        <div class="pp-spinner"></div>
+                        <span>Carregando rascunhos...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pp-modal-footer">
+                <button type="button" class="pp-btn pp-btn-secondary" id="btnNewDocument">
+                    <i class="fas fa-plus"></i>
+                    Novo Documento
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/services/documentService.js"></script>
+    <script src="js/proposals.js"></script>
+</body>
+</html>
